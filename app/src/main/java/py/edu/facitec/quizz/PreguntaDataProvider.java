@@ -20,7 +20,7 @@ public class PreguntaDataProvider {
 
     public static List<Pregunta> getPreguntas(){
         List<Pregunta> preguntas = new ArrayList<>();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 10; i++) {
             Pregunta p = new Pregunta();
             p.setTexto("Cuál es el color del Sol?");
             p.setId(0);

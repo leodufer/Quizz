@@ -7,11 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     Button buttonConfirmar;
     Pregunta pregunta;
     List<Pregunta> preguntas;
+    List<ImageView> scoreImageView = new ArrayList<>();
     int position = 0;
     int score = 0;
 
@@ -37,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
         textViewPregunta = (TextView) findViewById(R.id.textViewPregunta);
         radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
         buttonConfirmar = (Button)findViewById(R.id.buttonConfirmar);
+        scoreImageView.add((ImageView)findViewById(R.id.imageView0));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView1));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView2));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView3));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView4));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView5));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView6));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView7));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView8));
+        scoreImageView.add((ImageView)findViewById(R.id.imageView9));
 
     }
 
@@ -54,14 +67,19 @@ public class MainActivity extends AppCompatActivity {
         }else{
             if(radioButtonA.isChecked() && pregunta.getOpciones().get(0).isCorrecto()){
                 score++;
+                scoreImageView.get(position-1).setImageResource(android.R.drawable.presence_online);
             }else if(radioButtonB.isChecked() && pregunta.getOpciones().get(1).isCorrecto()){
                 score++;
+                scoreImageView.get(position-1).setImageResource(android.R.drawable.presence_online);
             }else if(radioButtonC.isChecked() && pregunta.getOpciones().get(2).isCorrecto()){
                 score++;
+                scoreImageView.get(position-1).setImageResource(android.R.drawable.presence_online);
             }
             else{
-                //Toast.makeText(this,"No es correcta :-(",Toast.LENGTH_SHORT).show();
+                scoreImageView.get(position-1).setImageResource(android.R.drawable.presence_invisible);
             }
+            scoreImageView.get(position-1).setVisibility(View.VISIBLE);
+            Log.i("POSITION", (position-1)+" ");
             nextPregunta();
         }
 
@@ -69,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextPregunta(){
-        if(position >= preguntas.size()){
+        if(position >= 10){
             textViewPregunta.setText("Finish. You score is "+score);
             radioGroup.setVisibility(View.INVISIBLE);
             buttonConfirmar.setEnabled(false);
