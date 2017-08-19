@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1073667533619",
+    "firebase_url": "https://quizz-ab785.firebaseio.com",
+    "project_id": "quizz-ab785",
+    "storage_bucket": "quizz-ab785.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073667533619:android:75df4082296f17bb",
+        "android_client_info": {
+          "package_name": "py.edu.facitec.quizz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073667533619-sghadb16fpkfrsnpajpek7e6fgkke5sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "py.edu.facitec.quizz",
+            "certificate_hash": "401c7eb0957681b954c23cf8ea752c287ed17575"
+          }
+        },
+        {
+          "client_id": "1073667533619-lkfgsuivlmacmf9kof27cq08vheo2tg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADo_-WJMTquZdH67aU8sNr4n_9TpFUqLk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073667533619-lkfgsuivlmacmf9kof27cq08vheo2tg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -67,19 +67,18 @@ public class MainActivity extends AppCompatActivity {
         }else{
             if(radioButtonA.isChecked() && pregunta.getOpciones().get(0).isCorrecto()){
                 score++;
-                scoreImageView.get(position-1).setImageResource(android.R.drawable.presence_online);
+                scoreImageView.get(position-1).setImageResource(android.R.drawable.checkbox_on_background);
             }else if(radioButtonB.isChecked() && pregunta.getOpciones().get(1).isCorrecto()){
                 score++;
-                scoreImageView.get(position-1).setImageResource(android.R.drawable.presence_online);
+                scoreImageView.get(position-1).setImageResource(android.R.drawable.checkbox_on_background);
             }else if(radioButtonC.isChecked() && pregunta.getOpciones().get(2).isCorrecto()){
                 score++;
-                scoreImageView.get(position-1).setImageResource(android.R.drawable.presence_online);
+                scoreImageView.get(position-1).setImageResource(android.R.drawable.checkbox_on_background);
             }
             else{
-                scoreImageView.get(position-1).setImageResource(android.R.drawable.presence_invisible);
+                scoreImageView.get(position-1).setImageResource(android.R.drawable.ic_delete);
             }
             scoreImageView.get(position-1).setVisibility(View.VISIBLE);
-            Log.i("POSITION", (position-1)+" ");
             nextPregunta();
         }
 

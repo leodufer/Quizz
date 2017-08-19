@@ -97,8 +97,8 @@
 
                 <ImageView
                     android:id="@+id/imageView0"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -106,8 +106,8 @@
 
                 <ImageView
                     android:id="@+id/imageView1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -115,8 +115,8 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -124,8 +124,8 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -133,8 +133,8 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -142,8 +142,8 @@
 
                 <ImageView
                     android:id="@+id/imageView5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -151,8 +151,8 @@
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -160,8 +160,8 @@
 
                 <ImageView
                     android:id="@+id/imageView7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -169,8 +169,8 @@
 
                 <ImageView
                     android:id="@+id/imageView8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
@@ -178,8 +178,8 @@
 
                 <ImageView
                     android:id="@+id/imageView9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_weight="1"
                     android:scaleType="center"
                     android:visibility="invisible"
