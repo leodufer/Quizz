@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quizz</string>
+    <string name="acceder">Açesar</string>
+    <string name="email">Correio Electronico</string>
+    <string name="password">Senha</string>
+    <string name="registrar">Registrar</string>
+    <string name="error_email">Digite um correio valido</string>
+    <string name="error_password">Digite a senha</string>
+</resources>

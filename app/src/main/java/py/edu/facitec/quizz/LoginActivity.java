@@ -32,16 +32,16 @@ public class LoginActivity extends AppCompatActivity {
 
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            emailEditText.setError("Complete el email");
+            emailEditText.setError(getString(R.string.error_email));
             return;
         }
 
         if(password.isEmpty()){
-            passwordEditText.setError("Complete el password");
+            passwordEditText.setError(getString(R.string.error_password));
             return;
         }
         //TODO login
-        Intent i = new Intent(this,MainActivity.class);
+        Intent i = new Intent(this,DashboardActivity.class);
         startActivity(i);
         finish();
 

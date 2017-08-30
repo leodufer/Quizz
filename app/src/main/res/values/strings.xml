@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Quizz</string>
-    <string name="title_activity_login">Login</string>
-    <item name="visible" type="id"/>
-    <item name="masked" type="id"/>
+    <string name="title_activity_login" translatable="false">Login</string>
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contrasena</string>
+    <string name="acceder">Acceder</string>
+    <string name="registrar">Registrar</string>
+    <string name="error_email">Complete un email valido</string>
+    <string name="error_password">Complete la contrasena</string>
 </resources>
