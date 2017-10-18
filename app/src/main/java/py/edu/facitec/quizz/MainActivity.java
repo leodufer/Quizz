@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void confirmar(View v){
         if(!radioButtonA.isChecked()&&!radioButtonB.isChecked()&&!radioButtonC.isChecked()){
-            Toast.makeText(this,"Seleccione una respuesta",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.error_seleccion),Toast.LENGTH_SHORT).show();
         }else{
             if(radioButtonA.isChecked() && pregunta.getOpciones().get(0).isCorrecto()){
                 score++;
