@@ -16,7 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ActivityViewManager{
 
     RadioButton radioButtonA;
     RadioButton radioButtonB;
@@ -57,9 +57,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        preguntas = PreguntaDataProvider.getPreguntas();
-        score=0;
-        nextPregunta();
+        PreguntaDataProvider.getPreguntas(MainActivity.this);
     }
     public void confirmar(View v){
         if(!radioButtonA.isChecked()&&!radioButtonB.isChecked()&&!radioButtonC.isChecked()){
@@ -100,6 +98,12 @@ public class MainActivity extends AppCompatActivity {
         radioButtonC.setText(pregunta.getOpciones().get(2).getTexto());
         radioGroup.clearCheck();
         position++;
+    }
+
+    public void onResultSuccess(List<Pregunta> preguntas){
+        this.preguntas = preguntas;
+        score=0;
+        nextPregunta();
     }
 
 }
