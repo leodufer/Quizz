@@ -106,4 +106,9 @@ public class MainActivity extends AppCompatActivity implements ActivityViewManag
         nextPregunta();
     }
 
+    @Override
+    public void onResultFailuire(String error) {
+        //TODO fail result implement
+    }
+
 }
