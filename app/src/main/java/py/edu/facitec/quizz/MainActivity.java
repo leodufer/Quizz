@@ -105,9 +105,9 @@ public class MainActivity extends AppCompatActivity implements ActivityViewManag
         score=0;
         nextPregunta();
     }
-
+    
     @Override
-    public void onResultFailuire(String error) {
+    public void onResultFailure(String error) {
         //TODO fail result implement
     }
 

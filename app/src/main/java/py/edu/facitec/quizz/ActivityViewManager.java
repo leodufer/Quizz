@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface ActivityViewManager {
     void onResultSuccess(List<Pregunta> preguntas);
-    void onResultFailuire(String error);
+    void onResultFailure(String error);
 }
